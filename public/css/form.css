@@ -1,0 +1,231 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+
+#basicExampleNav a:hover{
+    background-color:rgba(9, 105, 73, 0.842) ;
+    border-radius: 10px ;
+
+}
+
+h2 {
+    padding-top: 15px;
+  }
+
+
+  p {
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .para-2 {
+	font-weight: bolder;
+    padding-bottom: 10px;
+  }
+
+.flex-container {
+	display: flex;
+}
+
+body {
+	background-image: url('../images/Wallpaper1.webp');
+    background-size: cover;
+	background-repeat: no-repeat;
+}
+  
+ #myform {
+	transition-property: 0.5;
+	max-width: 550px;
+	background: linear-gradient(90deg, aqua 10%, rgb(223, 241, 237) 70%);	
+	border-radius: 5px;
+	padding: 30px 60px 0 30px;
+	align-items: center;
+	box-shadow: 10px 1px 68px 40px rgb(0, 33, 61);
+
+}
+
+.form {
+	padding: 30px 10px;	
+	background: rgba(255,255,255,0);
+	border-radius: 5px;
+}
+
+.form-control {
+    margin: 10px;
+	padding: 20px;
+	position: relative;
+	background: rgba(255,255,255,0);
+	border: none;
+}
+
+.form-control label {
+	font-weight: bolder;
+	display: inline-block;
+	margin-left: 10px;
+	margin-bottom: 5px;
+} 
+
+.form-control input {
+	border-radius: 4px;
+	display: flex;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px; 
+	position: relative;
+    border: none;
+	width: 100%;
+	background: rgba(255,255,255,0.2);
+    outline: 0; }
+
+
+	.form-control input:focus {
+		outline: 0;
+		border-color: #777;	
+		background: rgba(5, 216, 205, 0.959);
+	}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+
+.fa-check-circle {
+	visibility: hidden;
+	position: absolute;
+	top: 50px;
+	right: 20px;
+}
+
+.fa-exclamation-circle {
+	visibility: hidden;
+	position: absolute;
+	top: 50px;
+	right: 20px;
+}
+
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control.success i.fa-eye {
+	color: #2ecc71;	
+}
+
+.form-control.error i.fa-eye {
+	color: #e74c3c;	
+}
+
+.form-control.success i.fa-eye-slash {
+	color: #2ecc71;
+}
+
+.form-control.error i.fa-eye-slash {
+	color: #e74c3c;
+}
+
+
+.form-control small {
+	color: #683d38;
+	font-weight: bold;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+} 
+
+.form button {
+	border-radius: 4px;
+	display: block;
+	font-weight: bolder;
+	padding: 10px;
+	margin: 20px 0 0 10px;
+	width: 100%;
+    border: none;
+    background-color: #49c1a2;
+    color: white;
+    font-size: 18px;
+}
+
+.form button:hover{
+	color: lightgreen;
+}
+
+/* Password Strength */
+#myEye{
+	position: absolute;
+	top: 25px;
+	right: 20px;
+}
+
+.form-control .pw-display-toggle-btn {
+  position:absolute;
+  right:10px;
+  top:35px;
+  width:20px;
+  height:20px;
+  text-align:center;
+  line-height:20px;
+  cursor:pointer;
+}
+
+.form-control .pw-display-toggle-btn i.fa-eye-slash {
+  display:none;
+}
+.form-control .pw-display-toggle-btn.active i.fa-eye-slash {
+  display:block;
+}
+.form-control .pw-display-toggle-btn.active i.fa-eye {
+  display:none;
+}
+
+
+.form-control .pw-strength {
+  position:absolute;
+  width:91%;
+  height:20px;
+  margin-top:10px;
+  text-align:center;
+  background:#f2f2f2;
+  display:none;
+}
+.form-control .pw-strength span
+{
+	border-radius: 10px;
+
+}
+.form-control .pw-strength span:nth-child(1) {
+  position:absolute;
+  font-size:12px;
+  color:#111;
+  z-index:2;
+  font-weight:600;
+}
+.form-control .pw-strength span:nth-child(2) {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:0%;
+  height:100%;
+  border-radius:5px;
+  z-index:1;
+  transition:all 300ms ease-in-out;
+} 

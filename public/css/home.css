@@ -1,0 +1,72 @@
+body{
+    background-size: cover; 
+    background-image: url("http://localhost:3000/images/homecover.jpg");
+     /* width:900px; */
+
+   }
+ 
+   html{
+     height: 100%;
+   }
+ 
+ .navbar{
+     background:brown;
+     opacity: .75;
+     width:100%;
+ }
+ .navbar li{
+  padding: 10px; 
+ 
+ 
+ }
+ .navbar li a:hover{
+     background-color:rgba(59,13,13) ;
+     border-radius: 10px ;
+     color: #49c1a2;
+     font-weight: bolder;
+ 
+ }
+ 
+ 
+ .carousel-item{
+ 
+     height: 100vh;
+     min-height: 500px;
+     background: no-repeat center center scroll;
+    
+ }
+ 
+ 
+ .carousel-caption{
+     bottom: 270px;
+     opacity: 75%;
+ }
+ 
+ 
+ .carousel-caption h5{
+     font-size: 80px;
+     letter-spacing: 5px;
+     color: rgb(185, 156, 142);    
+ }
+ 
+ 
+ .carousel-caption h4{
+     font-size: 30px;
+     letter-spacing: 1px;
+ }
+ 
+ footer{
+     
+     color: white;
+     background: brown;
+     opacity:.75 ;
+     
+ }
+ a{
+     color: white;
+     text-decoration: none ;
+ }
+ 
+ a:hover{
+     color: rgb(92, 115, 216);
+ }

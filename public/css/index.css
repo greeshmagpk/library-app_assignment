@@ -1,0 +1,80 @@
+body{
+    background-size: cover;  
+    min-height: 100%;
+    
+  }
+  html{
+    height: 100%;
+  }
+.navbar{
+    background:brown;
+    opacity: .75;
+    width:100%;    
+}
+
+.navbar li a:hover{
+    background-color:rgba(59, 13, 13) ;
+    border-radius: 10px ;
+
+}
+
+
+footer{
+    margin-top: auto;
+    color: white;
+    background: brown;
+    opacity:.75;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(92, 115, 216);
+}
+/* start home */
+#home
+	{
+		
+		background-size: cover;
+		padding-top: 160px;
+		padding-bottom: 100px;
+		min-height: 650px;
+	}
+#home h1
+	{
+		font-weight: 300;
+		font-size: 70px;
+		padding-bottom: 10px;
+	}
+#home h1 span
+	{
+		color: brown;
+		font-weight: bold;
+	}
+#home .btn
+	{
+		background: brown;
+		border-radius: 2px;
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		margin-top: 20px;
+		width: 180px;
+		height: 60px;
+		padding-top: 18px;
+		-webkit-transition: all 0.4s ease-in-out;
+		        transition: all 0.4s ease-in-out;
+	}
+#home .btn:hover
+	{
+		background: rgb(59, 13, 13);
+		border-color: transparent;
+	}
+.element {
+	height: 60px;
+	font-size: 16px;
+}
+/* end home */

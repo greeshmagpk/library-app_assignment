@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reader's Corner</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/859e7ab76e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   
+    <link rel='stylesheet' href='css/login.css'>
+    <link rel='stylesheet' href='css/form.css'>
+<!-- Website Icon -->
+<link rel="icon" href="http://localhost:3000/images/logo1.png" type="image/x-icon" />
+</head>
+<body>
+
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="/">Reader's Corner</a>
+      
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+      
+          <!-- Links -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Log In
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signup">Sign Up</a>
+            </li>
+
+      
+          </ul>
+          <!-- Links -->
+      
+
+        </div>
+        <!-- Collapsible content -->
+      
+    </nav>
+
+
+     <div class="container-fluid">
+      <div class="row">
+        
+        <div class="col-md-12"> 
+          
+          <div class="panel">
+            <div class="panel-body"> 
+              
+              
+              
+              <!--/stories-->
+              <!-- <div class="container-fluid text-center m-5 p-5"> -->
+<!--     
+                <div class="container text-center col-6 mt-5" id="myform">
+                  <h2>Log In</h2>
+                  <br>
+                  <h6>Welcome Back</h6>
+                  <form id="form" method ='GET' action ="/login/check" onsubmit="return validate()" class="form">
+                      
+                      <div class="mb-3 form-control">
+                        <label for="username">Username</label>
+                        <input type="email" placeholder="Enter Email" id="email" name="userid"  autocomplete="off" accept="text/plain"/>
+                        <small>Error message</small>
+                      </div>
+                      <br>
+                      <div class="mb-3 form-control">
+                          <label for="Password">Password</label>
+                          <input type="password" placeholder="Password" id="password" name="pwdid" class="passwordInput" autocomplete="off"/>
+                          <small>Error message</small>
+                      </div>
+                      <br>
+                      <br> -->
+                      <!-- <button class="btn from-center" id ='load' type="submit" name="submitButton">Submit</button>
+                  </form>
+              
+                  <p class="para-2">
+                      Don't have an account? <a href="./signup"><b>Sign Up Here</b></a>
+                      <br>
+                      <small>For Admin access use Email as <i>admin@domain.com</i> and Password as <i>Admin@1234</i> </small>
+                  </p>
+                  <br>
+                </div>
+            
+              </div> -->
+              
+               <div class="testbox">
+                <form method="GET" action="/login/check" id="form" class="form align-items-center" onsubmit="return validate()">
+                  <div class="banner">
+                  <h1>Login</h1>
+                  </div>
+                  <br/>
+                  <p>Login to proceed.</p>
+                  <br/>
+                  <div class="colums">
+                  <div class="item">
+                    
+                    
+                        <input type="email" placeholder="Email" id="email" name="userid"  autocomplete="off" accept="text/plain"/>
+                        <small></small>
+                  
+                  </div>
+                  <br>
+                  <div class="item" id="">
+                   
+                    <input type="password" placeholder="Password" id="password" name="pwdid" class="passwordInput" autocomplete="off"/>
+                    <small></small>
+                               
+                    </div>
+                     </div>
+                     <br>
+                  
+                  <br>
+                  
+                
+                  
+                  
+                 
+                 
+                    
+                  <div class="btn-block">
+                  
+                    <button class="btn from-center" id ='load' type="submit" name="submitButton">Submit</button>
+                
+                </div>
+                  <br>
+                <p class="para-2">
+                  Don't have an account? <a href="./signup"><b>Sign Up Here</b></a>
+                  <br>
+                  <small>For Admin access use Email as <i>admin@domain.com</i> and Password as <i>Admin@1234</i> </small>
+              </p>
+              <br>
+              
+                
+                
+          
+                </div>
+              </form>
+             <!-- stories--> 
+              
+              
+              <!-- <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a> -->
+            
+              
+            </div>
+          </div>
+                                                                                           
+                                                    
+                                                          
+         </div><!--/col-12-->
+      </div>
+    </div>
+
+    <br>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark pt-2 ">
+
+
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2022 Copyright:
+          <a href="/">Reader's Corner</a>
+        </div>
+        <!-- Copyright -->
+  
+    </footer>
+    <!-- Footer end-->
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+              
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+            <script>
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+function validate() {
+	// trim to remove the whitespaces
+	
+	const emailValue = email.value.trim();
+	const passwordValue = password.value.trim();
+	var alpha= /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+	var space =/[\s]+/;
+	if(emailValue === '') {
+		setErrorFor(email, 'Email cannot be blank');
+        return false;
+	} else if (!isEmail(emailValue)) {
+		setErrorFor(email, 'Not a valid email');
+        return false;
+	} else {
+		setSuccessFor(email);
+        console.log('Bingo1');
+        if(passwordValue != '')
+		 	{
+            if(passwordValue.length <8) {
+                setErrorFor(password, 'Atleast 8 characters are required');
+                return false;
+            }   else if (password.value.match(space)) 
+            {
+                setErrorFor(password, 'Remove spaces');
+                return false;
+            } 
+            else if(passwordValue.match(alpha)) 
+	        {
+                setSuccessFor(password);
+                console.log('Bingo2');
+                return true;
+	        } 
+            else {
+                setErrorFor(password, 'Please add atleast one special characters and use numbers, uppercase and lowercase.');
+				return false;
+                
+            }
+            
+        } 
+        else{
+            setErrorFor(password, 'Re-enter correct password. Password cannot be blank');
+            return false;
+        }
+	}
+	
+}
+function setErrorFor(input, message) {
+	const formControl = input.parentElement;
+	const small = formControl.querySelector('small');
+	formControl.className = 'form-control error';
+	small.innerText = message;
+}
+function setSuccessFor(input) {
+	const formControl = input.parentElement;
+	formControl.className = 'form-control success';
+    
+}
+	
+function isEmail(email) 
+{
+	return /^([\w\.-]+)@([\w\-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/.test(email);
+}
+// Toggle Effect
+  document.querySelector(".form-control .pw-display-toggle-btn").addEventListener("click",function(){
+	let el = document.querySelector(".form-control .pw-display-toggle-btn");
+	if(el.classList.contains("active")){
+	  document.querySelector(".form-control #password").setAttribute("type","password");
+	  el.classList.remove("active");
+	} else {
+	  document.querySelector(".form-control #password").setAttribute("type","text");
+	  el.classList.add("active");
+	}
+  });
+        </script>
+
+</body>
+</html>
