@@ -239,6 +239,8 @@ function validate() {
 	const passwordValue = password.value.trim();
 	
 	var alpha= /^[a-zA-Z]+/;
+	var alphapwd= /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+
     var num = /[0-9]+/;
 	var space =/[\s]+/;
     // First Name Validation
@@ -338,11 +340,19 @@ function validate() {
 											setErrorFor(password, 'Atleast 8 characters are required');
 													return false;
 										} 
-										 else 
-										{
-											setSuccessFor(password);
-												return true;
-											}
+										else if(passwordValue.match(alphapwd)) 
+	        						   {
+                						setSuccessFor(password);
+                						console.log('Bingo2');
+                						return true;
+	        							} 
+            							else {
+                						setErrorFor(password, 'Please add atleast one special characters and use numbers, uppercase and lowercase.');
+										return false;
+                
+            							}
+
+										
 										}
 									}
 					}
